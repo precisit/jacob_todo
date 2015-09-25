@@ -10,7 +10,7 @@ module.exports = {
     'src' : 'app/styles/**/*.scss',
     'dest': 'build/css',
     'prodSourcemap': false,
-    'sassIncludePaths': []
+    'sassIncludePaths': ['./node_modules/bootstrap-sass/assets/stylesheets']
   },
 
   'scripts': {
@@ -24,7 +24,7 @@ module.exports = {
   },
 
   'fonts': {
-    'src' : ['app/fonts/**/*'],
+    'src' : ['node_modules/bootstrap-sass/assets/fonts/**/*', 'app/fonts/**/*'],
     'dest': 'build/fonts'
   },
 
