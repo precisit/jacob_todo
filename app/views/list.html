@@ -1,0 +1,17 @@
+<ul class="list-group">
+	<li class="list-group-item">
+		<input type="text" class="form-control" placeholder="Add note">
+	</li>
+</ul>
+
+<ul class="list-group">
+	<li ng-repeat="note in list.notes" class="list-group-item">
+		{{ note.name }}
+		<span class="glyphicon glyphicon-remove note-icon red-hover" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-ok note-icon green-hover"  aria-hidden="true"></span>
+	</li>
+</ul>
+
+
+
+
