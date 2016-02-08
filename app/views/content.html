@@ -1,0 +1,22 @@
+<div class="row">
+	<ul class="list-group">
+		<li class="list-group-item">
+		<form ng-submit="content.notes.addNote(newItem); newItem = {}" >
+				<input type="text" ng-model="newItem.text" class="form-control" placeholder="Add note">
+			</form>
+		</li>
+	</ul>
+</div>
+
+<div class="row">
+	<ul class="list-group">
+		<li ng-repeat="note in content.notes.getNotes()" class="list-group-item">
+			{{ note.text }}
+			<a href><span ng-click="content.notes.removeNote(note)" class="glyphicon glyphicon-ok note-icon green-hover" aria-hidden="true"></span></a>
+		</li>
+	</ul>
+</div>
+
+<div class="row no-notes" ng-show="!(content.notes.getNotes()).length">
+	<img src="http://www.precisit.se/assets/logo-big.png" height="200px"/>
+</div>
