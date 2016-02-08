@@ -3,7 +3,7 @@
 @import 'bootstrap'; 
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   color: $font-color--dark;
   background-color: #e8e8e8;
   padding: $half-space;
@@ -17,6 +17,13 @@ body {
 
 .container {
 	max-width: 600px;
+}
+
+.no-notes {
+	text-align:center;
+	opacity:0.25;
+	margin-top:40px;
+	-webkit-user-select: none;
 }
 
 .list-group-item {
@@ -38,11 +45,12 @@ body {
 		margin-left: 10px;
 		margin-right:10px;
 		font-weight:50;
+		font-size: 1.2em;
 	}
 
 	.green-hover {
 		&:hover {
-			color: #0f9d58;
+			color: #0B6684;
 		}
 	}
 	.red-hover {

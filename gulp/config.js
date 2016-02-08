@@ -2,9 +2,9 @@
 
 module.exports = {
 
-  'browserPort'  : 3000,
-  'UIPort'       : 3001,
-  'serverPort'   : 3002,
+  'browserPort'  : 4000,
+  'UIPort'       : 4001,
+  'serverPort'   : 4002,
 
   'styles': {
     'src' : 'app/styles/**/*.scss',
