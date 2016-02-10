@@ -26,7 +26,15 @@ body {
 	-webkit-user-select: none;
 }
 
+.precisitlogo {
+	background-image: url("http://www.precisit.se/assets/logo-big.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:350px;
+}
+
 .list-group-item {
+	opacity: none;
 	font-weight: 200;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.12);
 	border:none;
@@ -83,3 +91,32 @@ body {
 	}
 }
 
+.loading-div {
+	text-align:center;
+	color:grey;
+}
+
+.fa-spin-custom, .glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}

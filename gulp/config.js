@@ -28,6 +28,11 @@ module.exports = {
     'dest': 'build/fonts'
   },
 
+  'backend': {
+    'src' : ['app/backend/**/*'],
+    'dest': 'build/backend'
+  },
+
   'views': {
     'watch': [
       'app/index.html',
